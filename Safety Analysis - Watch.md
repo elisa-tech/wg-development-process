@@ -32,7 +32,7 @@ Some examples:
       - Find and include kernel configurations that might be relevant to the WD subsystem in use on the product.
 
 2. Identify and formalize a set of requirements for the WD component and use this to derive test cases to check these requirements. Purpose is to have a set of requirements- based tests able to run together with other existing syscall tests (fuzzers, etc.).
-      - See Table 8, as well as Annex QR, define a suitable combination of methods to derive test cases (requirements analysis, equivalence classes, boundary values, error              guessing). In addition to unit tests and other defined tests, define goals to identify gaps. We should determine if we can suggest more tests, or improve current                tests.
+      - Define a suitable combination of methods to derive test cases (requirements analysis, equivalence classes, boundary values, error guessing). In addition to unit tests and other defined tests, define goals to identify gaps. We should determine if we can suggest more tests, or improve current tests.
       - Document requirements on kernel-based functionality.
       - Consider formal methods for generation of test cases (e.g., Daniel B.’s work on RT formal verification).
 
@@ -40,7 +40,7 @@ Some examples:
       - Use callgraph or other relevant tools.
 
 4. Software integration and verification. Identify and formalize a set of requirements for the WD component and use this to derive test cases to check these requirements. Purpose is to have a set of requirements-based testing able to run together with other existing syscall tests (fuzzers, etc.).
-      - See Table 11, define a suitable combination of methods to derive test cases (based on requirements, equivalence classes, boundary values, error guessing). 	 	
+      - Define a suitable combination of methods to derive test cases (based on requirements, equivalence classes, boundary values, error guessing). 	 	
       - Document requirements in kernel, based on functionality.
 
 5. “Reverse engineer” architectural-level requirements from existing tests and/or information in patch discussions, using WD component. 	
