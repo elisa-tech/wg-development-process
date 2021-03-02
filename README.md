@@ -53,6 +53,7 @@ Stretch goal, pending preliminary results from work on safe kernel configuration
    - Publish the Reference Process, to provide information on safety standard expectations for those who do not have access to the safety standards documents. Issue to resolve:          does the Reference Process infringe the copyright for the source standards that it indexes / references?
 
 7. Further process assessment
-   - Owner: Peter Brink.  Contributor: Kent Nelson (co-owner), Kate Stewart (existing document from Jochen), Roberto Paccapeli (ERP)
-   - Extend the analysis applied to the Testing Process Assessment to cover other aspects of the Reference Process / standards. e.g. Tasks related to section 8 of ISO26262            (from line 48 in the testing process assessment spreadsheet): Revisit and see if there is anything relevant for follow up.
+   - Owner: Peter Brink.  Contributors: Kent Nelson (co-owner), Kate Stewart (existing document from Jochen), Roberto Paccapeli (ERP)
+   - Extend the analysis applied to the Testing Process Assessment to cover other aspects of the Reference Process / standards. e.g. Tasks related to section 8 of ISO26262            (from line 48 in the testing process assessment spreadsheet).
+   - Revisit and see if there is anything relevant for follow up.
    - How do we extend to other (no-automotive) standards?
