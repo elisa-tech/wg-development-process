@@ -12,7 +12,7 @@ For each task we define:
   - "Definition of Done" for that task - e.g., create a skeleton of the document for review with one section fully populated.
   - Milestones
 
-1. Safety analysis of on an example Linux kernel sub-system
+Safety analysis of on an example Linux kernel sub-system
      - In coordination with the Safety Architecture, Automotive and Medical Devices WGs, choose a key Kernel subsystem and work through the “What we can do in ELISA?” proposals        identified in the Testing Process Assessment.
      - It was proposed that the Watchdog sub-component is both relevant for current work in the Architecture and Automotive WGs, and also not overly complex, so that the WG            could completely work through a number of the proposals. The Memory Management subsystem was also proposed; this is more complex, but more widely applicable.
 
