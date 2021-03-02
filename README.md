@@ -16,9 +16,10 @@ Safety analysis of on an example Linux kernel sub-system
      - In coordination with the Safety Architecture, Automotive and Medical Devices WGs, choose a key Kernel subsystem and work through the “What we can do in ELISA?” proposals        identified in the Testing Process Assessment.
      - It was proposed that the Watchdog sub-component is both relevant for current work in the Architecture and Automotive WGs, and also not overly complex, so that the WG            could completely work through a number of the proposals. The Memory Management subsystem was also proposed; this is more complex, but more widely applicable.
 
-Owner:  Elana Copperman (in coordination with Gabriele Paoloni/Safety Architecture WG and Jochen Kall/AUtomotive WG).
+Owner
+      - Elana Copperman (in coordination with Gabriele Paoloni/Safety Architecture WG and Jochen Kall/AUtomotive WG).
 
-Goals and scope, Analysis of Watchdog subcomponent on 3 levels:
+Goals and scope, Analysis of Watchdog subcomponent on 3 levels
       - Pure software layer (independent of hardware implementation)
             We should focus our analysis on the pure software layer, focusing on software APIs on a generic hardware emulation
       - Hardware/Software interface (HSI)
@@ -27,11 +28,11 @@ Goals and scope, Analysis of Watchdog subcomponent on 3 levels:
             Up to the hardware vendor, to ensure that the ELISA recommendations are properly implemented on the specific hardware 
             platform
             
-Definition of Done:  An initial draft document summarizing documentation, design, architecture, requirements and test plans (see examples below) for the Watchdog subsystem.  
+Definition of Done
+      - An initial draft document summarizing documentation, design, architecture, requirements and test plans (see examples below) for the Watchdog subsystem.  
       - The document should be suitable for sharing with the broader Linux and safety community for feedback and further development.
 
-
-Milestones:
+Milestones
       - May 2021 ELISA Workshop - First internal draft for review and discussion
       - October (?) 2021 ELISA Workshop - Second internal draft for review and discussion
       - February (?) 2022 ELISA workshop - Third and final internal draft for review and discussion, opening for public reiew in Feb 2022.
