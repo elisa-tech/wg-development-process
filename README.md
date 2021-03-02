@@ -17,11 +17,12 @@ For each task we define:
   - It was proposed that the Watchdog sub-component is both relevant for current work in the Architecture and Automotive WGs, and also not overly complex, so that the WG            could completely work through a number of the proposals. 
   - The Memory Management subsystem was also proposed; this is more complex, but more widely applicable.
 
-2. "Big picture" for Tools subgroup.  Owner: Lukas Bulwahn
+2. "Big picture" for Tools subgroup.  
+   - Owner: Lukas Bulwahn
    - Engage with the Tools subgroup to define the “big picture” for their work on static analysis and MISRA checkers.
    – Analyze how the results for specific examples can be built up to a methodology which justifies why a patchset for a new feature should be added:
-         Compliance with requirements 	
-         Compliance between source code and specs (is this relevant for Linux? Where are the specs?)  	
-         Compliance with HSI spec (see intro to WD analysis above, we need to define such a spec for Linux so that we can analyze the hardware software interface). 	
-         Absence of unintended functionality 	
-         Implementation of safety measures derived from the safety analysis.
+        - Compliance with requirements 	
+        - Compliance between source code and specs (is this relevant for Linux? Where are the specs?)  	
+        - Compliance with HSI spec (see intro to WD analysis above, we need to define such a spec for Linux so that we can analyze the hardware software interface). 	
+        - Absence of unintended functionality 	
+        - Implementation of safety measures derived from the safety analysis.
