@@ -37,7 +37,7 @@ For each task we define:
 4. Kernel configurations
    - Owner: Elana Copperman
    - Continued low key (mostly offline) work on kernel configuration database.
-   - Elana to work offline, based on workshop 	feedback. Present to WG for feedback and alignment in ~6 weeks and plan an extended (~1 hour) session at the next workshop. 	
+   - Elana to work offline, based on workshop 	feedback. Present to WG for feedback and alignment in ~6 weeks (tentatively on April 22) and plan an extended (~1 hour) session at the next workshop. 	
    - Identify safety kernel configurations which can be defined for specific use cases. 
 Stretch goal, pending preliminary results from work on safe kernel configuration database.
 
