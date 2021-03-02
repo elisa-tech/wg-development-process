@@ -18,7 +18,7 @@ For each task we define:
 
 Owner:  Elana Copperman (in coordination with Gabriele Paoloni/Safety Architecture WG and Jochen Kall/AUtomotive WG).
 
-Goals and scope:  Analysis of Watchdog subcomponent on 3 leveals -
+Goals and scope:  Analysis of Watchdog subcomponent on 3 levels
       - Pure software layer (independent of hardware implementation)
             We should focus our analysis on the pure software layer, focusing on software APIs on a generic hardware emulation
       - Hardware/Software interface (HSI)
