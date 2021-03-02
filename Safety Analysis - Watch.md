@@ -8,9 +8,13 @@ Safety analysis of on an example Linux kernel sub-system
 
 2. Goals and scope, Analysis of Watchdog subcomponent on 3 levels
       - Pure software layer (independent of hardware implementation)
-            We should focus our analysis on the pure software layer, focusing on software APIs on a generic hardware emulation
+            We should focus our analysis on the pure software layer, focusing on software APIs on a generic hardware emulation.  References:
+            - https://linux.die.net/man/8/watchdog
+            
       - Hardware/Software interface (HSI)
-            We should define guidelines for hardware vendors to interface software emulation with their specific hardware
+            We should define guidelines for hardware vendors to interface software emulation with their specific hardware.  References:
+            - https://github.com/torvalds/linux/blob/master/Documentation/watchdog/watchdog-api.rst
+            
       - Hardware implementation
             Up to the hardware vendor, to ensure that the ELISA recommendations are properly implemented on the specific hardware 
             platform
