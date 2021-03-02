@@ -19,16 +19,15 @@ For each task we define:
 Owner:  Elana Copperman (in coordination with Gabriele Paoloni/Safety Architecture WG and Jochen Kall/AUtomotive WG).
 
 Goals and scope:  Analysis of Watchdog subcomponent on 3 levels
-
       - Pure software layer (independent of hardware implementation)
             We should focus our analysis on the pure software layer, focusing on software APIs on a generic hardware emulation
       - Hardware/Software interface (HSI)
             We should define guidelines for hardware vendors to interface software emulation with their specific hardware
       - Hardware implementation
-            Up to the hardware vendor, to ensure that the ELISA recommendations are properly implemented on the specific hardware platform
+            Up to the hardware vendor, to ensure that the ELISA recommendations are properly implemented on the specific hardware 
+            platform
             
 Definition of Done:  An initial draft document summarizing documentation, design, architecture, requirements and test plans (see examples below) for the Watchdog subsystem.  
-
       - The document should be suitable for sharing with the broader Linux and safety community for feedback and further development.
 
 
