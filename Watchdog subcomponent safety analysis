@@ -43,6 +43,6 @@ Some examples:
       - See Table 11, define a suitable combination of methods to derive test cases (based on requirements, equivalence classes, boundary values, error guessing). 	 	
       - Document requirements in kernel, based on functionality.
 
-5. “Reverse engineer” architectural-level requirements from existing tests and/or 	information in patch discussions, using WD component. 	
+5. “Reverse engineer” architectural-level requirements from existing tests and/or information in patch discussions, using WD component. 	
       - Requirements coverage by test cases on the software architectural level should be determined in order to demonstrate completeness. Incompletely covered requirements may          be supplemented with additional test cases or by other relevant means.
       - Decide if and how to publish the results of the WD testing analysis. Ideally as part of the code base, and to correlate with existing tests to support traceability.
