@@ -42,7 +42,7 @@ For each task we define:
 Stretch goal, pending preliminary results from work on safe kernel configuration database.
 
 5. Improve documentation
-   - Owner: ?  (Tasks without owners cannot be currently taken)
+   - Owner: Paul Albertella
    - Improve documentation of APIs in Linux kernel, as well as documentation of kernel interfaces (to user, hardware, between components) and behavior.
    - Following model of (1) above, start with a specific agreed area to focus. 	
    - Following model of (4) above, work offline and periodically align with the WG. 	
