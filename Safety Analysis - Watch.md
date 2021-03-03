@@ -9,19 +9,22 @@ Safety analysis of on an example Linux kernel sub-system
 2. Goals and scope, Analysis of Watchdog subcomponent on 3 levels
       - Pure software layer (independent of hardware implementation)
             We should focus our analysis on the pure software layer, focusing on software APIs on a generic hardware emulation.  References:
+            
             - https://linux.die.net/man/8/watchdog
             - https://www.kernel.org/doc/html/latest/watchdog/watchdog-kernel-api.html#  Describes user space interfaces to WT Timer Driver Core Framework (from kernel v5.2)
             - https://github.com/torvalds/linux/blob/master/drivers/watchdog/Kconfig  WD kernel configurations
             
       - Hardware/Software interface (HSI)
             We should define guidelines for hardware vendors to interface software emulation with their specific hardware.  References:
+            
             - https://www.kernel.org/doc/html/latest/watchdog/watchdog-api.html  Most recent version of the basic Linux WD driver API
             - https://cateee.net/lkddb/web-lkddb/WATCHDOG_SYSFS.html  Read WD device status via sysfs attributes
             - https://cateee.net/lkddb/web-lkddb/WATCH_QUEUE.html   Provide a general notification queue for the kernel to pass events to userspace  
                 
       - Hardware implementation
             Up to the hardware vendor, to ensure that the ELISA recommendations are properly implemented on the specific hardware 
-            platform
+            platform.  References:
+            
             - https://cateee.net/lkddb/web-lkddb/WATCHDOG_RIO.html   Support the hardware watchdog capability on Sun RIO machines (and other similar configs)
             
 3. Definition of Done
