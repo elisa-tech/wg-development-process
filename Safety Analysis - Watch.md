@@ -50,6 +50,7 @@ Some examples:
 
 3. Develop a checklist or skeleton system architecture for the WD subsystem, identifying the APIs, interfaces, and other system configuration features.
       - Use callgraph or other relevant tools.
+  ** Begin with this point, based on references, in conjunction with (5) below.  Identify potential failure modes 
 
 4. Software integration and verification. Identify and formalize a set of requirements for the WD component and use this to derive test cases to check these requirements. Purpose is to have a set of requirements-based testing able to run together with other existing syscall tests (fuzzers, etc.).
       - Define a suitable combination of methods to derive test cases (based on requirements, equivalence classes, boundary values, error guessing). 	 	
