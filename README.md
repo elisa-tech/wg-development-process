@@ -51,9 +51,3 @@ Stretch goal, pending preliminary results from work on safe kernel configuration
    - Extend the analysis applied to the Testing Process Assessment to cover other aspects of the Reference Process / standards. e.g. Tasks related to section 8 of ISO26262            (from line 48 in the testing process assessment spreadsheet).
    - Revisit and see if there is anything relevant for follow up.
    - How do we extend to other (no-automotive) standards?
-
-7. Code coverage, generalize results from Eli Gurvitz's mentorship project.
-   - Owner: Eli Gurvitz
-   - Look at adding tests to improve coverage. Derive a methodology / set of guidelines to assemble the pieces and infrastructure available to formulate MC/DC level testing. 
-   - We may need a combination of tools and a way to demonstrate at the end that we have full coverage.
-   - Engage with Eli G. and perhaps coordinate a follow up mentorship project.
