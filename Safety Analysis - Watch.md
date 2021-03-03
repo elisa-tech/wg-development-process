@@ -20,6 +20,7 @@ Safety analysis of on an example Linux kernel sub-system
             - https://www.kernel.org/doc/html/latest/watchdog/watchdog-api.html  Most recent version of the basic Linux WD driver API
             - https://cateee.net/lkddb/web-lkddb/WATCHDOG_SYSFS.html  Read WD device status via sysfs attributes
             - https://cateee.net/lkddb/web-lkddb/WATCH_QUEUE.html   Provide a general notification queue for the kernel to pass events to userspace  
+            - https://github.com/torvalds/linux/blob/master/drivers/watchdog/watchdog_core.c  WD common core infrastructure
                 
       - Hardware implementation
             Up to the hardware vendor, to ensure that the ELISA recommendations are properly implemented on the specific hardware 
@@ -27,6 +28,7 @@ Safety analysis of on an example Linux kernel sub-system
             
             - https://cateee.net/lkddb/web-lkddb/WATCHDOG_RIO.html   Support the hardware watchdog capability on Sun RIO machines (and other similar configs)
             - https://github.com/torvalds/linux/blob/master/drivers/greybus/svc_watchdog.c SVC Greybus WD driver (similar to WD support under other drivers)
+            - https://github.com/torvalds/linux/tree/master/drivers/watchdog  HW WD drivers
             
 3. Definition of Done
       - An initial draft document summarizing documentation, design, architecture, requirements and test plans (see examples below) for the Watchdog subsystem.  
