@@ -23,9 +23,10 @@ Safety analysis of on an example Linux kernel sub-system
                 
       - Hardware implementation
             Up to the hardware vendor, to ensure that the ELISA recommendations are properly implemented on the specific hardware 
-            platform.  References:
+            platform.  References
             
             - https://cateee.net/lkddb/web-lkddb/WATCHDOG_RIO.html   Support the hardware watchdog capability on Sun RIO machines (and other similar configs)
+            - https://github.com/torvalds/linux/blob/master/drivers/greybus/svc_watchdog.c SVC Greybus WD driver (similar to WD support under other drivers)
             
 3. Definition of Done
       - An initial draft document summarizing documentation, design, architecture, requirements and test plans (see examples below) for the Watchdog subsystem.  
