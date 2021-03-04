@@ -6,7 +6,7 @@ Safety analysis of on an example Linux kernel sub-system
 1. Owner
       - Elana Copperman (in coordination with Gabriele Paoloni/Safety Architecture WG and Jochen Kall/AUtomotive WG).
  
-PROPOSED WORK PLAN - TBevelop a checklist or skeleton system architecture for the WD subsystem, identifying the APIs, interfaces, and other system configuration features.D:
+PROPOSED WORK PLAN - Develop a checklist or skeleton system architecture for the WD subsystem, identifying the APIs, interfaces, and other system configuration features.D:
 * Agree on goals and scope; DoD; milestones
 * 
 * Develop a checklist or skeleton system architecture for the WD subsystem, identifying the APIs, interfaces, and other system configuration features.
