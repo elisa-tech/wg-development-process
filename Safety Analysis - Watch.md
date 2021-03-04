@@ -5,7 +5,22 @@ Safety analysis of on an example Linux kernel sub-system
 
 1. Owner
       - Elana Copperman (in coordination with Gabriele Paoloni/Safety Architecture WG and Jochen Kall/AUtomotive WG).
-
+ 
+PROPOSED WORK PLAN - TBevelop a checklist or skeleton system architecture for the WD subsystem, identifying the APIs, interfaces, and other system configuration features.D:
+* Agree on goals and scope; DoD; milestones
+* 
+* Develop a checklist or skeleton system architecture for the WD subsystem, identifying the APIs, interfaces, and other system configuration features.
+* Question - to what level is architecutre/design appropriate for our purpose?
+*     - Block diagrams of components + interfaces.  Define on 3 layers (SW; HSI; HW)
+*     - Document every single API + parameters - ?
+*     - Execution flow - ?
+*     - Prerequisites (e.g., necessary locks)
+*     
+* FMEA --> safety goals, failure modes, safety requirements.
+* Define safety requirements --> test cases
+* Compare existing test frameworks to proposed, identify gaps.
+* Anything else?
+* 
 2. Goals and scope, Analysis of Watchdog subcomponent on 3 levels
       - Pure software layer (independent of hardware implementation)
             We should focus our analysis on the pure software layer, focusing on software APIs on a generic hardware emulation.  References:
