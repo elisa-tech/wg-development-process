@@ -14,7 +14,7 @@ PROPOSED WORK PLAN - Develop a checklist or skeleton system architecture for the
 *     - Block diagrams of components + interfaces.  Define on 3 layers (SW; HSI; HW)
 *     - Document every single API + parameters - ?
 *     - Execution flow - ?
-*     - Prerequisites (e.g., necessary locks)
+*     - Assumptions (e.g., necessary locks)
 *     
 * FMEA --> safety goals, failure modes, safety requirements.
 * Define safety requirements --> test cases
