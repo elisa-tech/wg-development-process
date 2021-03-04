@@ -1,6 +1,6 @@
 Safety analysis of on an example Linux kernel sub-system
   - In coordination with the Safety Architecture, Automotive and Medical Devices WGs, choose a key Kernel subsystem and work through the “What we can do in ELISA?” proposals        identified in the Testing Process Assessment (.https://docs.google.com/spreadsheets/d/15wbukSZ5lSR-YhzED8ojfFh2FAyAog1o3Hh84-JyRHA/edit#gid=1513725300).
-  - It was proposed that the Watchdog sub-component https://github.com/torvalds/linux/blob/master/tools/testing/selftests/watchdog/watchdog-test.c  is both relevant for current work in the Architecture and Automotive WGs, and also not overly complex, so that the WG could completely work through a number of the proposals. 
+  - It was proposed that the Watchdog sub-component https://linux.die.net/man/8/watchdog is both relevant for current work in the Architecture and Automotive WGs, and also not overly complex, so that the WG could completely work through a number of the proposals. 
   - The Memory Management subsystem was also proposed; this is more complex, but more widely applicable.  It is an option for followup (next task).
 
 1. Owner
@@ -10,9 +10,9 @@ Safety analysis of on an example Linux kernel sub-system
       - Pure software layer (independent of hardware implementation)
             We should focus our analysis on the pure software layer, focusing on software APIs on a generic hardware emulation.  References:
             
-            - https://linux.die.net/man/8/watchdog
             - https://www.kernel.org/doc/html/latest/watchdog/watchdog-kernel-api.html#  Describes user space interfaces to WT Timer Driver Core Framework (from kernel v5.2)
             - https://github.com/torvalds/linux/blob/master/drivers/watchdog/Kconfig  WD kernel configurations
+            - https://github.com/torvalds/linux/blob/master/tools/testing/selftests/watchdog/watchdog-test.c 
             
       - Hardware/Software interface (HSI)
             We should define guidelines for hardware vendors to interface software emulation with their specific hardware.  References:
