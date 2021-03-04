@@ -21,7 +21,7 @@ PROPOSED WORK PLAN - Develop a checklist or skeleton system architecture for the
 * Compare existing test frameworks to proposed, identify gaps.
 * Anything else?
 * 
-2. Goals and scope, Analysis of Watchdog subcomponent on 3 levels
+2. Goals and scope, Architectural analysis of Watchdog subcomponent on 3 levels
       - Pure software layer (independent of hardware implementation)
             We should focus our analysis on the pure software layer, focusing on software APIs on a generic hardware emulation.  References:
             
