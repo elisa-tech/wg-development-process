@@ -81,6 +81,7 @@ Some examples:
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 See Watchdog_architecture document for a high level block diagram of a simple Watchdog architecture.
+
 See document, Watchdog Diagram, for high level summary of the 3 levels (sw/hsi/hw).
 
 See https://github.com/torvalds/linux/blob/master/tools/testing/selftests/watchdog/watchdog-test.c - basic selftexts.
