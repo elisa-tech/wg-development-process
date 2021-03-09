@@ -21,7 +21,7 @@ PROPOSED WORK PLAN - Develop a checklist or skeleton system architecture for the
 * Compare existing test frameworks to proposed, identify gaps.
 * Anything else?
 * 
-2. Goals and scope, Architectural analysis of Watchdog subcomponent on 3 levels
+2. Goals and scope, Architectural analysis of Watchdog subcomponent on 3 levels.  
       - Pure software layer (independent of hardware implementation)
             We should focus our analysis on the pure software layer, focusing on software APIs on a generic hardware emulation.  References:
             
@@ -69,7 +69,7 @@ Some examples:
 3. Develop a checklist or skeleton system architecture for the WD subsystem, identifying the APIs, interfaces, and other system configuration features.
       - Use callgraph or other relevant tools.
   ** Begin with this point, based on references, in conjunction with (5) below.  Identify potential failure modes 
-
+ 
 4. Software integration and verification. Identify and formalize a set of requirements for the WD component and use this to derive test cases to check these requirements. Purpose is to have a set of requirements-based testing able to run together with other existing syscall tests (fuzzers, etc.).
       - Define a suitable combination of methods to derive test cases (based on requirements, equivalence classes, boundary values, error guessing). 	 	
       - Document requirements in kernel, based on functionality.
@@ -77,3 +77,32 @@ Some examples:
 5. “Reverse engineer” architectural-level requirements from existing tests and/or information in patch discussions, using WD component. 	
       - Requirements coverage by test cases on the software architectural level should be determined in order to demonstrate completeness. Incompletely covered requirements may          be supplemented with additional test cases or by other relevant means.
       - Decide if and how to publish the results of the WD testing analysis. Ideally as part of the code base, and to correlate with existing tests to support traceability.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+See Watchdog_architecture document for a high level block diagram of a simple Watchdog architecture.
+See document, Watchdog Diagram, for high level summary of the 3 levels (sw/hsi/hw).
+
+See https://github.com/torvalds/linux/blob/master/tools/testing/selftests/watchdog/watchdog-test.c - basic selftexts.
+What is included?  Test of basic WD functionality:  Watchdog device is found and successfully opened.  In addition, the following information can be derived:
+1. BootStatus - If last boot was caused by watchdog or power-on-reset.
+2. Disable - If watchdog card is disabled.
+3. Enable - If watchdog card is enabled.
+4. Ping rate - number seconds to which watchdog ping rate is set.
+5. SetTimeout - Sets watchdog timeout to given number of seconds.
+6. Gettimeout - Returns number seconds to which watchdog timeout rate is set.
+7. SetPretimeout - Sets watchdog pretimeout (for multiple stage WD) to given number of seconds 
+8. Getpretimeout - Returns number seconds to which pretimout rate is set.
+9. Gettimeleft - Returns number seconds left to next timeout.
+10. Info - Returns watchdog info (identity, firmware version, supported options).
+
+Failure modes (those marked with * are relevant for multistage software handling architectures.
+1. Watchdog fails to "bark" on timeout or fault.
+2. Watchdog "barks" without timeout or fault.
+3. * Device is reset without switch to defined fail state for error handling.
+4. Watchdog "barks" but timeout interval is inappropriately set for the given use case.
+5. Timeout setting has been corrupted.
+6. In a multitasking environment, the watchdog timer is not properly locked for correct synchronization between the tasks.  "Kicking" the watchdog is not mutually exclusive.
+7. In a multitasking environment, software watchdog does not detect expected software failures such as infinite loops, or deadlocks between two or more tasks.
+8. In a multitasking environment, task priorities are not set so that the WD cannot avoid livelock by higher priority task(s).
+
