@@ -82,7 +82,7 @@ Some examples:
 
 See Watchdog_architecture document for a high level block diagram of a simple Watchdog architecture.
 
-See document, Watchdog Diagram, for high level summary of the 3 levels (sw/hsi/hw).
+See Watchdog_diagram document for a high level summary of the 3 levels (sw/hsi/hw).
 
 See https://github.com/torvalds/linux/blob/master/tools/testing/selftests/watchdog/watchdog-test.c - basic selftexts.
 What is included?  Test of basic WD functionality:  Watchdog device is found and successfully opened.  In addition, the following information can be derived:
