@@ -96,14 +96,3 @@ What is included?  Test of basic WD functionality:  Watchdog device is found and
 8. Getpretimeout - Returns number seconds to which pretimout rate is set.
 9. Gettimeleft - Returns number seconds left to next timeout.
 10. Info - Returns watchdog info (identity, firmware version, supported options).
-
-Failure modes (those marked with * are relevant for multistage software handling architectures.
-1. Watchdog fails to "bark" on timeout or fault.
-2. Watchdog "barks" without timeout or fault.
-3. * Device is reset without switch to defined fail state for error handling.
-4. Watchdog "barks" but timeout interval is inappropriately set for the given use case.
-5. Timeout setting has been corrupted.
-6. In a multitasking environment, the watchdog timer is not properly locked for correct synchronization between the tasks.  "Kicking" the watchdog is not mutually exclusive.
-7. In a multitasking environment, software watchdog does not detect expected software failures such as infinite loops, or deadlocks between two or more tasks.
-8. In a multitasking environment, task priorities are not set so that the WD cannot avoid livelock by higher priority task(s).
-
