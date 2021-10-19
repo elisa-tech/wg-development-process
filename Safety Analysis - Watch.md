@@ -1,6 +1,6 @@
 Architectural analysis of on an example Linux kernel sub-system
-  - In coordination with the Safety Architecture, Automotive and Medical Devices WGs, choose a key Kernel subsystem and work through the “What we can do in ELISA?” proposals        identified in the Testing Process Gap Analysis (.https://docs.google.com/spreadsheets/d/15wbukSZ5lSR-YhzED8ojfFh2FAyAog1o3Hh84-JyRHA/edit#gid=1513725300).
-  - It was proposed that the Watchdog sub-component https://linux.die.net/man/8/watchdog is both relevant for current work in the Architecture and Automotive WGs, and also not overly complex, so that the WG could completely work through a number of the proposals. 
+  - In coordination with the Safety Architecture, Automotive and Medical Devices WGs, choose a key Kernel subsystem and work through the “What we can do in ELISA?” proposals        identified in the [Testing Process Gap Analysis](https://docs.google.com/spreadsheets/d/15wbukSZ5lSR-YhzED8ojfFh2FAyAog1o3Hh84-JyRHA/edit#gid=1513725300).
+  - It was proposed that the [Watchdog sub-component](https://linux.die.net/man/8/watchdog) is both relevant for current work in the Architecture and Automotive WGs, and also not overly complex, so that the WG could completely work through a number of the proposals. 
   - The Memory Management subsystem was also proposed; this is more complex, but more widely applicable.  It is an option for followup (next task).
 
 1. Owner
